@@ -146,7 +146,6 @@ namespace Trino.Client
                 return sslPolicyErrors == SslPolicyErrors.None;
             };
 
-            //HttpClient httpClient = new HttpClient(handler);
             this.httpClient = new HttpClient(handler);
             this.httpClient.Timeout = Constants.HttpConnectionTimeout;
 
